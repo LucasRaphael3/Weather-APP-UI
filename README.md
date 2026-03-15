@@ -2,7 +2,7 @@
 
 A stunning, premium weather application built with Vanilla JavaScript, HTML, and CSS. The UI is heavily inspired by modern macOS/iOS glassmorphism design trends and features smooth micro-animations, dynamic sunrise/sunset tracking, and live weather data.
 
-![Weather App Preview](/public/weather-app-ui-preview.png) *(Preview background)*
+![Weather App Preview](/public/assets/weather-app-ui-preview.png) *(Preview background)*
 
 ## ✨ Features
 * **Beautiful UI**: Deep indigo gradients, glassmorphic frosted cards, parallax stars, and soft glows.
