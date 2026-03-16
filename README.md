@@ -1,60 +1,165 @@
-# Weather App 🌤️
+## Weather App
 
-A stunning, premium weather application built with Vanilla JavaScript, HTML, and CSS. The UI is heavily inspired by modern macOS/iOS glassmorphism design trends and features smooth micro-animations, dynamic sunrise/sunset tracking, and live weather data.
+Um aplicativo de clima elegante construído com **JavaScript Vanilla, HTML e CSS**. A interface é inspirada nas tendências modernas de design glassmorphism do macOS e iOS, com microanimações suaves, acompanhamento dinâmico de nascer e pôr do sol e dados meteorológicos em tempo real.
 
-![Weather App Preview](/public/assets/weather-app-ui-preview.png) *(Preview home)*
+![Weather App Preview](/public/assets/weather-app-ui-preview.png) 
 
-## ✨ Features
-* **Beautiful UI**: Deep indigo gradients, glassmorphic frosted cards, parallax stars, and soft glows.
-* **Live Geolocation**: Automatically asks for the user's location to immediately display their local weather.
-* **OpenWeather API Integration**: 
-  * Current conditions (Temperature, High/Low, Condition string)
-  * Hourly Forecast (Next 24 hours in scrolling capsules)
-  * 5-Day Weekly Forecast (with dynamic High/Low range bars)
-  * Live Air Quality Index (AQI slider)
-  * Dynamic UV Index gradient bar
-  * Wind Compass (SVG rose that rotates to the precise current wind direction)
-  * Sunrise/Sunset tracking arc
-* **City Search**: Debounced live search to look up the weather for any given city worldwide.
+---
 
-## 🛠 Tech Stack
-* **Vite** — Extremely fast development build tool.
-* **Vanilla HTML5 & CSS3** — No CSS frameworks (like Tailwind or Bootstrap). Uses advanced CSS features like CSS Variables, `backdrop-filter: blur`, flexbox/grid, and native keyframe animations.
-* **Vanilla JavaScript (ES6+)** — No React or Vue. Employs modern features like async/await, `Promise.allSettled()`, and native DOM manipulation.
+## Funcionalidades
 
-## 🚀 Getting Started
+**Interface moderna**
 
-### 1. Requirements
-* Node.js installed
+* Gradientes profundos em tons de índigo
+* Cartões com efeito de vidro fosco (glassmorphism)
+* Estrelas com efeito parallax
+* Iluminação suave na interface
 
-### 2. Clone and Install
+**Geolocalização automática**
+
+Solicita a localização do usuário para mostrar imediatamente o clima da região.
+
+**Integração com a API OpenWeather**
+
+Inclui:
+
+* Condições atuais
+
+  * Temperatura
+  * Máxima e mínima
+  * Descrição do clima
+
+* Previsão por hora
+
+  * Próximas 24 horas
+  * Cards roláveis
+
+* Previsão semanal de 5 dias
+
+  * Barras dinâmicas de temperatura máxima e mínima
+
+* Índice de Qualidade do Ar (AQI)
+
+* Índice UV com barra de gradiente dinâmica
+
+* Bússola do vento
+
+  * Rosa dos ventos em SVG que gira para mostrar a direção do vento
+
+* Rastreamento do nascer e pôr do sol
+
+  * Visualizado em um arco dinâmico
+
+**Busca por cidade**
+
+Busca em tempo real com debounce para pesquisar o clima de qualquer cidade do mundo.
+
+---
+
+## Tecnologias Utilizadas
+
+**Vite**
+Ferramenta extremamente rápida para desenvolvimento.
+
+**HTML5 e CSS3 puros**
+Sem frameworks CSS como Tailwind ou Bootstrap. Utiliza:
+
+* CSS Variables
+* backdrop-filter blur
+* Flexbox e Grid
+* animações com keyframes
+
+**JavaScript Vanilla (ES6+)**
+
+Sem uso de React ou Vue. Utiliza recursos modernos como:
+
+* async / await
+* Promise.allSettled()
+* manipulação direta do DOM
+
+---
+
+## Como começar
+
+### 1. Requisitos
+
+Node.js instalado.
+
+---
+
+### 2. Clonar e instalar o projeto
+
 ```bash
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
 npm install
 ```
 
-### 3. API Key setup
-This project uses the free **OpenWeatherMap API**. 
-1. Get a free API key at [OpenWeatherMap](https://openweathermap.org/)
-2. Create a file named `.env` in the root of the project.
-3. Add your API key using the Vite prefix:
+---
+
+### 3. Configuração da API
+
+Este projeto utiliza a API gratuita do OpenWeatherMap.
+
+1. Crie uma conta em
+   [https://openweathermap.org/](https://openweathermap.org/)
+
+2. Crie um arquivo `.env` na raiz do projeto.
+
+3. Adicione sua chave de API:
+
 ```env
-VITE_OPENWEATHER_API_KEY=your_api_key_here
+VITE_OPENWEATHER_API_KEY=sua_api_key_aqui
 ```
 
-### 4. Run Development Server
+---
+
+### 4. Rodar o projeto
+
 ```bash
 npm run dev
 ```
-Open `http://localhost:5173` in your browser.
 
-## 📂 Project Structure
-* `index.html` - The single-page application structure. Contains SVGs and ID hooks for JS.
-* `style.css` - All styling, variables, resets, and keyframe animations.
-* `main.js` - Application logic including DOM updates, search debounce, and component rendering.
-* `api.js` - Service layer handling all fetch requests to the OpenWeather endpoints.
-* `/public` - Static assets including the hero icon and background imagery.
+Abra no navegador:
 
-## 📝 License
-This project is open-source and available under the [MIT License](LICENSE).
+```
+http://localhost:5173
+```
+
+---
+
+## Estrutura do Projeto
+
+**index.html**
+
+Estrutura principal da aplicação. Contém SVGs e elementos que são manipulados pelo JavaScript.
+
+**style.css**
+
+Contém todo o sistema de estilos, variáveis, resets e animações.
+
+**main.js**
+
+Responsável pela lógica da aplicação:
+
+* atualização do DOM
+* busca com debounce
+* renderização de componentes
+
+**api.js**
+
+Camada responsável pelas requisições para a API do OpenWeather.
+
+**public**
+
+Contém arquivos estáticos como imagens, ícones e recursos visuais.
+
+---
+
+## Licença
+
+Este projeto é open source e está disponível sob a licença MIT.
+
+
+
+
